@@ -1,0 +1,8 @@
+version: '3'
+services:
+  docker_img:
+    container_name: docker_cont
+    image: "silemilan/docker_image:$BUILD_TAG"
+    build:
+      context: .
+  
